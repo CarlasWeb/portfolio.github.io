@@ -1,0 +1,40 @@
+ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('img/carlabw.jpg');
+  min-height: 100%;
+}
+
+
+ .wiggle {
+  height: auto;
+  animation-name:wiggle;
+  -webkit-animation-name:wiggle;
+  animation-duration:2.5s;
+  -webkit-animation-duration:2.5s;
+  -webkit-animation-iteration-count:infinite
+  }
+  @keyframes wiggle { /*css for waving hand */
+    0%,100%{transform:rotate(-10deg)
+      }
+      50%{transform:rotate(10deg)
+        }
+        }
+        @-webkit-keyframes wiggle{
+          0%,100%{
+            -webkit-transform:rotate(-4deg)}50%{-webkit-transform:rotate(4deg)}}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
