@@ -1,13 +1,26 @@
- body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('img/carlabw.jpg');
-  min-height: 100%;
+ .heart {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg), auto;
 }
 
+.sideimg {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.smallimg{
+  width: 315px;
+  height: 420px;
+  object-fit: cover;
+}
+
+
+hr {
+  border-top: 1px solid black;
+}
 
  .wiggle {
   height: auto;
@@ -17,24 +30,74 @@
   -webkit-animation-duration:2.5s;
   -webkit-animation-iteration-count:infinite
   }
-  @keyframes wiggle { /*css for waving hand */
+
+  footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0 20px 0;
+  }
+
+
+  @keyframes wiggle { /*css for moving icons */
     0%,100%{transform:rotate(-10deg)
       }
       50%{transform:rotate(10deg)
         }
-        }
-        @-webkit-keyframes wiggle{
-          0%,100%{
-            -webkit-transform:rotate(-4deg)}50%{-webkit-transform:rotate(4deg)}}
+  }
+  
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+@media only screen and (min-width: 425px){
+  h1 {
+  font-size: 65px;
+  text-align: center;
   }
 }
+
+@media only screen and (min-width: 599px){
+
+  .aboutme, .skills, .work {
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 40px;
+}
+}
+
+@media only screen and (max-width: 424px){
+  h1 {
+  font-size: 50px;
+  text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .aboutme, .skills {
+  margin-left: 30px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .hide-mob{
+    display: none;
+  }
+  .top-section{
+    padding: 75px 30px 75px 30px;
+  }
+  .button {
+    padding: 20px;
+  }
+  body {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 769px){
+  .hide-desktop{
+    display: none;
+  }
+  .top-section{
+    padding: 200px 30px 200px 30px;
+    }
+}
+
