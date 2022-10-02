@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="idstyle.css">
 	    <script src="js/uikit.min.js"></script>
 	    <script src="js/uikit-icons.min.js"></script>
+	    <script src="js/nav.js"></script>
 	    <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Parisienne&display=swap" rel="stylesheet">
@@ -31,7 +32,18 @@
 			    </nav>
 			    <!-- mobile nav -->
 			    <div class="desktop-hide ">
+
+			    	<div id="mySidenav" class="sidenav">
+					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					  <a onclick="closeNav()" href="#about">About</a>
+					  <a onclick="closeNav()" href="#work">My Work</a>
+					  <a onclick="closeNav()" href="#contact">Contact</a>
+					</div>
 					<img class="uk-margin-top uk-margin-left" src="id-img/i-D.png">
+					<span onclick="openNav()"><img class="uk-margin-top uk-margin-right uk-align-right" height="40px" width="40px" src="id-img/menu.png"></span>
+
+					
+					<!-- <img class="uk-margin-top uk-margin-left" src="id-img/i-D.png">
 					<a class="uk-margin-top uk-margin-right uk-align-right" href="#offcanvas-usage" uk-icon="icon: menu; ratio: 2" uk-toggle></a>
 					<div id="offcanvas-usage" uk-offcanvas="flip: true">
 					    <div class="uk-offcanvas-bar">
@@ -42,7 +54,8 @@
 				                <li><a style="color: #fff;" href="#contact">Contact</a></li>
 			                </ul>
 					    </div>
-					</div>
+					</div> -->
+
 			    </div>
 			</div>
 			<div class="hero-text" >
@@ -119,6 +132,9 @@
 
 	</body>
 </html>
+
+
+
 
 
 
