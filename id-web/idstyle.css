@@ -96,6 +96,12 @@ footer {
   }
 }
 
+@media (min-width: 960px){
+  .hr-desktop-hide {
+    display: none;
+  }
+}
+
 @media (min-width:  889px) {
     .brief-margin {
     margin-top:  50px;
