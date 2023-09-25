@@ -26,28 +26,47 @@ hr {
   border-top: 1px solid black;
 }
 
- .wiggle {
+.cvBtn {
+  
+  background-color: #000;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.uk-link, a {
+  color: #fff;
+}
+
+.uk-link, a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+.wiggle {
   height: auto;
   animation-name:wiggle;
   -webkit-animation-name:wiggle;
   animation-duration:2.5s;
   -webkit-animation-duration:2.5s;
   -webkit-animation-iteration-count:infinite
-  }
+}
 
-  footer {
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 20px 0 20px 0;
-  }
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
 
 
-  @keyframes wiggle { /*css for moving icons */
-    0%,100%{transform:rotate(-10deg)
-      }
-      50%{transform:rotate(10deg)
-        }
+@keyframes wiggle { /*css for moving icons */
+  0%,100% {
+    transform:rotate(-10deg)
   }
+  50% {
+    transform:rotate(10deg)
+  }
+}
   
 
 @media only screen and (min-width: 425px){
