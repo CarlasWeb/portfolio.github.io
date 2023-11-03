@@ -66,11 +66,15 @@ h2 {
 
 }
 
-.hover {
-  transition: 2s ease-in-out;
+.work-block {
+/*  transition: transform 1s ease-in-out;*/
 }
-.hover:hover {
+
+.work-block:hover {
   transform: scale(1.1);
+  transition: all 1s ease-in-out;
+  
+
 }
 
 span {
