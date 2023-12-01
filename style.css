@@ -11,8 +11,10 @@
   top: 0;
 }
 
-.image {
-  
+.skill-icon {
+  width: 40px;
+  object-fit: contain;
+  margin-right: 15px;
 }
 
 .smallimg{
@@ -44,12 +46,13 @@ hr {
 }
 
 .wiggle {
-  height: auto;
+/*  height: auto;*/
   animation-name:wiggle;
   -webkit-animation-name:wiggle;
   animation-duration:2.5s;
   -webkit-animation-duration:2.5s;
   -webkit-animation-iteration-count:infinite
+
 }
 
 footer {
