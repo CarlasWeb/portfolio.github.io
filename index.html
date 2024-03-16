@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/uikit.min.css" />
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 	<title>
@@ -14,149 +15,200 @@
 	<body>
 
 		<div class="uk-grid">
-			<div class="uk-width-2-5 image hide-mob">
-				<img class="sideimg" src="img/Carla.jpg">
+			<div class="uk-width-2-5@m heart uk-visible@m">
+				<img class="sideimg" src="img/me2.png">
 			</div>
+
 			<div class="uk-width-3-5@m uk-padding-remove">
-				<div class="top-section uk-flex uk-flex-middle uk-flex-column">
-					<h1 class="uk-margin-remove-bottom">Carla Arrowsmith</h1>
-					<p>Front-end Web Developer</p>
-					<div class="hide-desktop image" id="">
-						<img class="smallimg" src="img/Carla.jpg">
+				<div class="uk-container">
+					<nav class="margin-large-bottom uk-visible@s">
+						<div class="nav">
+							<a href="#about">ABOUT</a>
+							<a href="#skills">SKILLS</a>
+							<a href="#work">WORK</a>
+						</div>
+					</nav>
+					<div class="hide-desktop margin-large-bottom">
+						<img src="img/logocwl.png" class="wiggle uk-margin-top" width="50" height="50">
+						<a class="uk-margin-top uk-margin-right uk-align-right" href="#offcanvas-usage" uk-icon="icon: menu; ratio: 2" uk-toggle></a>
+						<div id="offcanvas-usage" uk-offcanvas="flip: true">
+						    <div class="uk-offcanvas-bar">
+						        <button class="uk-offcanvas-close" type="button" uk-close></button>
+						        <ul style="list-style: none;">
+				                    <li><a style="color: #fff;" href="#about">ABOUT</a></li>
+				                    <li><a style="color: #fff;" href="#skills">SKILLS</a></li>
+				                    <li><a style="color: #fff;" href="#work">WORK</a></li>
+				                </ul>
+						    </div>
+						</div>
+				    </div>
+
+					<div class="animate-text margin-large-bottom main-text" >
+					  	<span class="h2-text">Hello<span class="main_color">,</span> I<span class="main_color">'</span>m</span><br>
+					  	<span class="main_color h1-text">Carla</span><br>
+					  	<span class="h2-text">Front<span class="main_color">-</span>end Web Developer<span class="main_color">.</span></span><br>
+					  	<span class="button">
+							<a target="_blank" href="doc/carlascv.pdf" download=""><button class="btn">Download CV</button></a>
+						</span>
 					</div>
-					<div class="button">
-						<button class="cvBtn"><a target="_blank" href="doc/Carla'sCV.pdf" download=""><i class="fa fa-download"></i> Download CV </a></button>
+					<!-- <div class="top-section uk-flex uk-flex-middle uk-flex-column">
+						<h1 class="uk-margin-remove-bottom">Carla Arrowsmith</h1>
+						<p>Front-end Web Developer</p>
+						<div class="hide-desktop" id="">
+							<img class="smallimg" src="img/carlabw.jpg">
+						</div> -->
+						<!-- <div class="button">
+							<button class="btn"><a target="_blank" href="doc/carlascv.pdf" download=""><i class="fa fa-download"></i> Download CV </a></button>
+						</div> -->
+					<!-- </div> -->
+					
+					
+					<div class="margin-large-bottom" id="about">
+						<!-- <hr> -->
+						<h2 class="waviy margin-remove-top">
+						   <span style="--i:1">A</span>
+						   <span style="--i:2">b</span>
+						   <span style="--i:3">o</span>
+						   <span style="--i:4">u</span>
+						   <span style="--i:5">t</span>
+						   <span class="main_color" style="--i:6">.</span>
+						</h2>
+						<p>Hey there, I'm Carla, your friendly neighborhood front-end Web Developer! By day, I'm all about coding and creating awesome digital stuff. But when the workday's done, you'll find me soaking up the great outdoors like there's no tomorrow. I'm a total outdoor junkie – surfing, hiking, you name it! There's just something magical about riding the waves or trekking through nature that keeps me balanced.</p>
+
+						<p>At home, I share my space with two mischievous feline friends. They're like my partners in crime, always there to add a bit of cuddly chaos to my day and often like to help me mess up my code.</p> 
+
+						<p>Since June 2021, I have been a Front-End Developer at CVP, using a range of coding languages, such as <span class="main_color">HTML</span>, <span class="main_color">CSS</span>, <span class="main_color">JavaScript</span>, and also dabbling with back-end technologies such as <span class="main_color">MySQL</span> and <span class="main_color">PHP</span>. Additionally, my role extends into the design realm, where I use tools such as <span class="main_color">Canva</span>, <span class="main_color">Figma</span>, and <span class="main_color">Adobe</span> Creative Cloud applications to enhance the aesthetic and user experience of digital platforms.</p>
+
+						<p>My journey at CVP has been a rewarding one, I actively contribute to the development and enhancement of several key projects. Among these, I have been a crucial part of the team responsible for the maintenance and improvement of their expansive e-commerce website, ensuring it provides a seamless and user-friendly experience to customers. Additionally, I have played a pivotal role in crafting the online presence of CVP's London Studio, helping to showcase their creative offerings to a wider audience. Beyond these external-facing projects, I've also contributed with internal systems, refining and streamlining processes for enhanced efficiency.</p>
+
+						<p>While my journey has included ventures into back-end development and design, I am now looking to refocus my efforts, concentrating more on the front-end aspect. I am passionate about crafting seamless and visually appealing user interfaces, and I believe that directing my focus towards the front-end will allow me to leverage my skills to their fullest potential.</p> 
 					</div>
+
+
+					<div class="skills margin-large-bottom" id="skills">
+						<!-- <hr> -->
+						<div class="">
+							<h2 class="waviy margin-remove-top">
+							   <span style="--i:1">S</span>
+							   <span style="--i:2">k</span>
+							   <span style="--i:3">i</span>
+							   <span style="--i:4">l</span>
+							   <span style="--i:5">l</span>
+							   <span style="--i:5">s</span>
+							   <span class="main_color" style="--i:6">.</span>
+							</h2>
+						</div>
+						<div uk-grid>
+							<div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/html.png" class="wiggle" width="40" height="40"> Html</p>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/css.png" class="wiggle" width="40" height="40"> CSS</p>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/js.png" class="wiggle" width="35" height="35"> JavaScript</p>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/php.png" class="wiggle" width="40" height="40"> Php</p>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/sql.png" class="wiggle" width="50" height="50"> SQL</p>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/boots.png" class="wiggle" width="50" height="50"> Bootstrap</p>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/figma.png" class="wiggle" width="35" height="35"> Figma</p>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/gh.png" class="wiggle" width="50" height="50"> GitHub</p>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/uikit.svg" class="wiggle" width="40" height="40"> UIkit</p>
+							</div>
+							<!-- <div class="uk-width-1-2@s uk-width-1-3@m">
+								<p><img src="img/ps.png" class="wiggle" width="50" height="50"> Photoshop</p>
+							</div> -->
+						</div>
+					</div>
+
+					<div class="work margin-large-bottom" id="work">
+						<!-- <hr> -->
+						<h2 class="waviy margin-remove-top">
+						   <span style="--i:1">W</span>
+						   <span style="--i:2">o</span>
+						   <span style="--i:3">r</span>
+						   <span style="--i:4">k</span>
+						   <span class="main_color" style="--i:6">.</span>
+						</h2>
+						<div class="card-container">
+							<div class="panel active flex" style="justify-content: center; flex-direction: column; align-items: center; padding: 20px;">
+								<img class="card-img" src="img/cvp_logo_small.png" alt="CVP Logo" style="max-width:90px">
+								<div class="card-text uk-margin-top">
+									<p style="color: #000;"><b>CVP</b><br>CVP is one of Europe's leading Broadcast and Professional video equipment providers.<a target="_blank" href="https://cvp.com/"> cvp.com</a></p>
+								</div>
+							</div>
+
+							<div class="panel flex" style="justify-content: center; flex-direction: column; align-items: center; padding: 20px;">
+								<img class="card-img" src="img/logoblack.png" alt="CVP Creative Space Logo" style="max-width:90px">
+								<div class="card-text hidden uk-margin-top">
+									<p style="color: #000;"><b>CVP Creative Space</b><br>Creative Space Studio is a collaboration between CVP & ARRI designed to harbour creativity and showcase the latest production solutions.<a target="_blank" href="https://cvpcreativespace.com/"> cvpcreativespace.com</a></p>
+								</div>
+							</div>
+
+							<div class="panel flex" style="justify-content: center; flex-direction: column; align-items: center; padding: 20px;">
+							    <img class="card-img" src="img/icepivacy-black-logo.png" alt="Iceprivacy Logo" style="max-width:90px">
+							    <div class="card-text hidden uk-margin-top">
+							        <p style="color: #000;"><b>Iceprivacy</b><br>Iceprivacy is a company based in Gibraltar that provides digital security solutions such as encrypted data storage and VPN.<a target="_blank" href="ice/index.html"> ice.gi</a></p>
+							    </div>
+							</div>
+
+							<div class="panel flex" style="justify-content: center; flex-direction: column; align-items: center; padding: 20px;">
+								<img class="card-img" src="img/id-black.png" alt="CVP Logo" style="max-width:90px">
+								<div class="card-text hidden uk-margin-top">
+									<p style="color: #000;"><b>i-D</b><br>i-D is an example website I designed and built.<a target="_blank" href="id-web/idindex.html"> id.co.uk</a></p>
+								</div>
+							</div>
+						</div>
+
+						<div uk-grid class="hide-small-work margin-large-bottom uk-grid-match">
+							<div class="uk-width-1-2@s uk-width-1-1@m">
+								<div class="uk-flex uk-flex-middle work-small">
+									<a class="uk-margin-right uk-margin-left" href="https://cvp.com/"><img src="img/cvp_logo_small.png" alt="CVP Logo" style="max-width:90px"></a>
+									<p class="uk-margin-right" style="color: #000;"><b>CVP</b><br>CVP is one of Europe's leading Broadcast and Professional video equipment providers.<a target="_blank" href="https://cvp.com/"> cvp.com</a></p>
+								</div>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-1@m">
+								<div class="uk-flex uk-flex-middle work-small">
+									<a class="uk-margin-right uk-margin-left" href="https://cvp.com/"><img src="img/logoblack.png" alt="CVP Logo" style="max-width:90px"></a>
+									<p class="uk-margin-right" style="color: #000;"><b>CVP Creative Space</b><br>Creative Space Studio is a collaboration between CVP & ARRI designed to harbour creativity and showcase the latest production solutions.<a target="_blank" href="https://cvpcreativespace.com/"> cvpcreativespace.com</a></p>
+								</div>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-1@m">
+								<div class="uk-flex uk-flex-middle work-small">
+									<a class="uk-margin-right uk-margin-left" href="https://cvp.com/"><img src="img/icepivacy-black-logo.png" alt="CVP Logo" style="max-width:90px"></a>
+									<p class="uk-margin-right" style="color: #000;"><b>Iceprivacy</b><br>Iceprivacy is a company based in Gibraltar that provides digital security solutions such as encrypted data storage and VPN.<a target="_blank" href="ice/index.html"> ice.gi</a></p>
+								</div>
+							</div>
+							<div class="uk-width-1-2@s uk-width-1-1@m">
+								<div class="uk-flex uk-flex-middle work-small">
+									<a class="uk-margin-right uk-margin-left" href="https://cvp.com/"><img src="img/id-black.png" alt="CVP Logo" style="max-width:90px"></a>
+									<p class="uk-margin-right" style="color: #000;"><b>i-D</b><br>i-D is an example website I designed and built.<a target="_blank" href="id-web/idindex.html"> id.co.uk</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+	  
 				</div>
-				
-				
-				<section class="aboutme">
-					<hr>
-					<h2>About Me</h2>
-					<p>Hello, I'm Carla Arrowsmith, and I'm passionate about the world of web development. With a career spanning since June 2021, I've been fortunate to work as a junior front-end web developer at CVP, a prominent leader in broadcast and professional video solutions throughout the UK and Europe.</p>
-
-					<p>My journey at CVP has been a rewarding one, I actively contribute to the development and enhancement of several key projects. Among these, I have been a crucial part of the team responsible for the maintenance and improvement of their expansive e-commerce website, ensuring it provides a seamless and user-friendly experience to customers. Additionally, I have played a pivotal role in crafting the online presence of CVP's London Studio, helping to showcase their creative offerings to a wider audience. Beyond these external-facing projects, I've also engaged with internal systems, refining and streamlining processes for enhanced efficiency.</p>
-
-					<p>Throughout my tenure, I have had the opportunity to hone my skills in various web technologies. My proficiency in HTML and CSS has grown significantly, enabling me to create visually appealing and responsive web interfaces. Moreover, I've developed a solid foundation in JavaScript and PHP, which has allowed me to add dynamic elements to websites and contribute to the functionality of CVP's digital ecosystem.</p>
-
-					<p>My time at CVP has been a rich learning experience, and I'm excited to continue my journey predominantly in front-end web development, exploring new technologies and techniques to create engaging and impactful online experiences.</p> 
-				</section>
-				<!--<section class="skills">
-					<hr>
-					<h2>My Skills</h2>
-					<div uk-grid>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/html.png" class="wiggle" width="40" height="40"> Html</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/css.png" class="wiggle" width="40" height="40"> CSS</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/php.png" class="wiggle" width="40" height="40"> Php</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/sql.png" class="wiggle" width="50" height="50"> SQL</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/boots.png" class="wiggle" width="50" height="50"> Bootstrap</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/lr.png" class="wiggle" width="50" height="50"> Lightroom</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/js.png" class="wiggle" width="35" height="35"> JavaScript</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/gh.png" class="wiggle" width="50" height="50"> GitHub</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/uikit.svg" class="wiggle" width="40" height="40"> UIkit</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m">
-							<p><img src="img/ps.png" class="wiggle" width="50" height="50"> Photoshop</p>
-						</div>
-					</div>
-				</section>-->
-
-				<section class="skills">
-					<hr>
-					<h2>My Skills</h2>
-					<div uk-grid>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/html.png" class="wiggle skill-icon">
-							<p>Html</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/css.png" class="wiggle skill-icon">
-							<p>CSS</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/php.png" class="wiggle skill-icon">
-							<p>Php</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/sql.png" class="wiggle skill-icon">
-							<p>SQL</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/boots.png" class="wiggle skill-icon">
-							<p>Bootstrap</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/lr.png" class="wiggle skill-icon">
-							<p>Lightroom</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/js.png" class="wiggle skill-icon">
-							<p>JavaScript</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/gh.png" class="wiggle skill-icon">
-							<p>GitHub</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/uikit.svg" class="wiggle skill-icon">
-							<p>UIkit</p>
-						</div>
-						<div class="uk-width-1-2@s uk-width-1-3@m uk-flex">
-							<img src="img/ps.png" class="wiggle skill-icon">
-							<p>Photoshop</p>
-						</div>
-					</div>
-				</section>
-
-				<section class="work">
-					<hr>
-					<h2>My Work</h2>
-					<div uk-grid>
-						<div class="uk-width-1-2@s uk-flex uk-flex-middle">
-							<a class="uk-margin-right" href="https://cvp.com/"><img src="img/cvp_logo_small.png" alt="CVP Logo" style="max-width:90px"></a>
-							<p><b>CVP</b><br>CVP's main e-commerce website. <a href="https://cvp.com/">cvp.com</a></p>
-						</div>
-						<div class="uk-width-1-2@s uk-flex uk-flex-middle">
-							<a class="uk-margin-right" href="id-web/idindex.html"><img src="img/id-black.png" alt="Geminae Logo" style="max-width:90px"></a>
-							<p><b>i-D</b><br>This website is a mock-up I designed and developed. <a href="id-web/idindex.html">id.co.uk</a></p>
-						</div>
-						<div class="uk-width-1-2@s uk-flex uk-flex-middle">
-							<a class="uk-margin-right" href="https://cvpcreativespace.com//"><img src="img/81.png" alt="CVP Logo" style="max-width:90px"></a>
-							<p><b>Creative Space</b><br>Creative Space is CVP's London based studio. <a href="https://cvpcreativespace.com//">cvpcreativespace.com</a></p>
-						</div>
-						<div class="uk-width-1-2">
-							
-						</div>
-					</div>
-				</section>
-  
-
-				
-				<footer>
-					<a style="cursor: default;" href="ice/index.html"><img src="img/logocwl.png" class="wiggle" width="70" height="70"></a>
-  				</footer>
-				
+				<div class="uk-margin-top">
+					<footer>
+						<img src="img/logocwl.png" class="wiggle" width="70" height="70">
+	  				</footer>
+				</div>
 			</div>
 
 		</div>
-	</body>
 
-	
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
 </html>

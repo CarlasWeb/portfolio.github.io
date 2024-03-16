@@ -1,0 +1,281 @@
+/*.heart {
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg), auto;
+}*/
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.main_color {
+    color: #DF8FBA;
+}
+
+.nav {
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 100px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #DF8FBA;
+    cursor: pointer;
+}
+
+.main-text{
+    height: 48vh;
+}
+
+.h1-text {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.h2-text {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+h2, p {
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 25px;
+    color: #000;
+    background-color: #DF8FBA;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #fff;
+    border: 2px solid #DF8FBA;
+    color: #DF8FBA;
+    padding: 8px 13px;
+}
+.sideimg {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.animate-text {
+    color: #fff;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+}
+
+.animate-text span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+.animate-text span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animate-text span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animate-text span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animate-text span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animate-text span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animate-text span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.animate-text span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    } 
+}
+
+.waviy {
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: #DF8FBA;
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: #DF8FBA;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg) 
+    }
+}
+
+.wiggle {
+    height: auto;
+    animation-name:wiggle;
+    -webkit-animation-name:wiggle;
+    animation-duration:2.5s;
+    -webkit-animation-duration:2.5s;
+    -webkit-animation-iteration-count:infinite
+}
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+@keyframes wiggle { /*css for moving icons */
+    0%,100%{transform:rotate(-10deg)}
+    50%{transform:rotate(10deg)}
+}
+
+.card-container {
+    display: flex;
+    width: 100vh;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    border-radius: 50px;
+    color: #000;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    background-color: #fff;
+}
+
+.work-small {
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.panel.active .card-img {
+    transform: rotate(0deg);
+}
+
+.panel .card-img {
+    transform: rotate(-90deg);
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.card-img {
+    transition: .5s ease-in-out;
+}
+
+.flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+  
+@media only screen and (min-width: 425px){
+    h1 {
+        font-size: 65px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 424px){
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 639px){
+    .hide-desktop{ 
+        display: none;
+    }  
+}
+
+@media only screen and (max-width: 600px){
+    .h1-text {
+        font-size: 4em;
+    }
+
+    .h2-text {
+        font-size: 1.9em;
+    }
+}
+
+@media (min-width: 640px) {
+    .uk-container {
+        padding-left: 60px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1439px) {
+    .card-container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
+    .hide-small-work {
+        display: none;
+  }
+}
+
+.margin-large-bottom {
+    margin-bottom: 200px;
+}
+
+
