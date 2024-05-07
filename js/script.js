@@ -19,7 +19,7 @@ panels.forEach((panel) => {
           const cssStyles = `
             .panel .card-text {
                 opacity: 0;
-                transition: opacity .5s ease-in .3s;
+                transition: opacity .2s ease-in .1s;
             }
 
             .panel .card-text.show {
