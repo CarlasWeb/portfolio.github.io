@@ -24,6 +24,10 @@ body {
     text-decoration: none;
 }
 
+.csLink {
+    color: #000;
+    font-weight: bold;
+}
 
 a:hover {
     color: #DF8FBA;
@@ -45,11 +49,11 @@ a:hover {
 }
 
 
-h2, p {
+h2, p, h3 {
     color: #fff;
 }
 
-button {
+.btn {
     cursor: pointer;
     margin-top: 25px;
     color: #000;
@@ -61,12 +65,29 @@ button {
     text-decoration: none;
 }
 
-button:hover {
+.btn:hover {
     background-color: #fff;
     border: 2px solid #DF8FBA;
     color: #DF8FBA;
     padding: 8px 13px;
 }
+
+.visitWeb {
+    cursor: pointer;
+/*    margin-top: 25px;*/
+    color: #fff;
+    background-color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.visitWeb:hover{
+    box-shadow: 0px 1px 15px 3px rgba(255,255,255,1);
+}
+
 .sideimg {
     height: 100vh;
     width: 100%;
@@ -217,6 +238,33 @@ footer {
 .hidden {
     display: none;
 }
+
+
+.carousel-container {
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-carousel {
+  display: flex;
+  animation: carousel-animation 15s linear infinite;
+}
+
+.logo-carousel img {
+  max-width: 100px; /* Adjust as needed */
+  margin-right: 150px; /* Adjust spacing between logos */
+}
+
+@keyframes carousel-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
   
 @media only screen and (min-width: 425px){
     h1 {
@@ -230,10 +278,14 @@ footer {
         font-size: 50px;
         text-align: center;
     }
+
+    .logo-carousel img {
+        margin-right: 75px;
+    }
 }
 
 @media only screen and (max-width: 768px){
-    body {
+    .indexbody {
         padding-left: 30px;
     }
 }
@@ -242,6 +294,10 @@ footer {
     .hide-desktop{ 
         display: none;
     }  
+
+    #test-target {
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -255,7 +311,7 @@ footer {
 }
 
 @media (min-width: 640px) {
-    .uk-container {
+    .uk-container1 {
         padding-left: 60px;
         padding-right: 30px;
     }
@@ -276,5 +332,4 @@ footer {
 .margin-large-bottom {
     margin-bottom: 200px;
 }
-
 
