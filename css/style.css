@@ -8,7 +8,7 @@ body {
 }
 
 .main_color {
-    color: #DF8FBA;
+    color: #ad8ea4;
 }
 
 .nav {
@@ -34,7 +34,7 @@ body {
 }
 
 a:hover {
-    color: #DF8FBA;
+    color: #ad8ea4;
     cursor: pointer;
 }
 
@@ -61,7 +61,7 @@ h2, p, h3 {
     cursor: pointer;
     margin-top: 25px;
     color: #000;
-    background-color: #DF8FBA;
+    background-color: #ad8ea4;
     padding: 10px 15px;
     border-radius: 5px;
     border: none;
@@ -71,8 +71,8 @@ h2, p, h3 {
 
 .btn:hover {
     background-color: #fff;
-    border: 2px solid #DF8FBA;
-    color: #DF8FBA;
+    border: 2px solid #ad8ea4;
+    color: #ad8ea4;
     padding: 8px 13px;
 }
 
@@ -157,14 +157,14 @@ h2, p, h3 {
 .waviy {
     position: relative;
     text-decoration: underline;
-    text-decoration-color: #DF8FBA;
+    text-decoration-color: #ad8ea4;
 }
 
 .waviy span {
     position: relative;
     display: inline-block;
     text-decoration: underline;
-    text-decoration-color: #DF8FBA;
+    text-decoration-color: #ad8ea4;
     animation: flip 2s infinite;
     animation-delay: calc(.2s * var(--i))
 }
