@@ -57,4 +57,9 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
     }
+
+  .btn {
+    background-color: #000;
+    border: 1px solid #C3C3C3;
+  }
 </style>

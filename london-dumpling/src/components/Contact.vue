@@ -1,7 +1,7 @@
 <template>
     <div class="bg-color">
         <div class="container pt-5 pb-5">
-            <h2 class="pb-4 text-center" id="about">Contact</h2>
+            <h2 class="pb-4 text-center" id="contact">Contact</h2>
             <div class="row">
                 <div class="col-md order-md-2">
                     <p>If you would like to make a booking, have any questions, queries or dietry needs please dont hesitate to contact us </p>

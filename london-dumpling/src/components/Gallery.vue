@@ -1,7 +1,7 @@
 <template>
     <div class="bg-color">
         <div class=" pt-5 pb-5 text-center">
-            <h2 class="pb-4" id="about">Gallery</h2>
+            <h2 class="pb-4" id="gallery">Gallery</h2>
             <swiper
                 :modules="modules"
                 :breakpoints="{ 
