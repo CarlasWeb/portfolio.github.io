@@ -337,6 +337,13 @@ footer {
     }
 }
 
+@media only screen and (max-width: 500px){
+   
+        .card p {
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width: 768px){
     .indexbody {
         padding-left: 30px;
