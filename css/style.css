@@ -7,6 +7,10 @@ body {
     color: #fff;
 }
 
+a {
+    color: #fff;
+}
+
 .main_color {
     color: #ad8ea4;
     font-weight: bold;
@@ -18,11 +22,22 @@ body {
     justify-content: flex-end;
 }
 
-.nav a {
+.nav-cs {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a, .nav-cs a {
     color: #fff;
     margin-left: 100px;
     font-size: 1em;
     text-decoration: none;
+}
+
+.nav-cs-logo {
+
 }
 
 .mobNav {
